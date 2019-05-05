@@ -3,7 +3,7 @@
  *
  * Created: 9/21/2018 1:30:12 AM
  * Author : Sahil S. Mahajan
- * Description: Program to calculate the tempo of a real-time drum beat
+ * Description: Calculates the tempo of a real-time drum beat
  *
  */ 
 

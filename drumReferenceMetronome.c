@@ -81,8 +81,8 @@ void display(void)
     {
         PORTC = selectDigit[digitNumber];
         PORTD = numberList[places[digitNumber]];            //places is the hundreds, tens, and ones place of a number      
-        _delay_ms(7);                                       /*7 ms seems about the right amount of time for a smooth transition */ 
-                                                            /*   to the next digit/number                                       */
+        _delay_ms(7);                                       /*7 ms seems about the right amount of time for */ 
+                                                            /*a smooth transition to the next digit/number  */
     }
 }
 
@@ -135,7 +135,7 @@ void calculateTimeInterval(void)
  *
  */
 
-void updateTempoDisplay(void)                                                                                                   
+void updateTempoDisplay(void) 
 {
     avgArrayIndex = beatNumber%2;
     avgArray[avgArrayIndex] = tempoBPM;
@@ -161,7 +161,8 @@ void updateTempoDisplay(void)
  * Function: init
  * --------------
  *
- * sets timer mode, prescaler, and noise canceller, enables interrupts, turns on 7 segment display, and initializes variables
+ * sets timer mode, prescaler, and noise canceller, enables interrupts, turns on 7 segment display,
+ *   and initializes variables
  *
  */
 

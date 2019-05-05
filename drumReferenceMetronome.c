@@ -120,11 +120,11 @@ void getPlaceValues(unsigned int n)
 void calculateTimeInterval(void)
 {
     timeIntervalHex = ICR1;                         //read uint16_t hexadecimal timer value in ICR1 into timeIntervalHex
-    sprintf(string, "%i", timeIntervalHex);         /*convert hex number into decimal. sprintf makes a string containing the decimal */
-                                                    /*   value                                                                       */
+    sprintf(string, "%i", timeIntervalHex);         /*convert hex number into decimal. sprintf makes a string */
+                                                    /*   containing the decimal value.                        */
     timeIntervalDecimal = atoi(string);             //convert string into an integer
-    tempoBPM = 15625L*60L/timeIntervalDecimal;      /*convert decimal number into beats per minute. Timer increments once every 1024 */
-                                                    /* clock cycles, and clock cycle is 16 MHz                                       */
+    tempoBPM = 15625L*60L/timeIntervalDecimal;      /*convert decimal number into beats per minute. Timer increments */
+                                                    /* once every 1024 clock cycles, and clock cycle is 16 MHz       */
 }
 
 /* ----------------------------

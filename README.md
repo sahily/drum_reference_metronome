@@ -22,7 +22,7 @@ Program to calculate the tempo of a real-time drum beat
 
 ### Example
 
-Tapping the piezoelectric sensor we get the tempo in beats per minute.
+Tapping the piezoelectric sensor, the tempo in beats per minute is displayed.
 
 ## Authors
 
